@@ -9,4 +9,4 @@ Route::get('/user', function (Request $request) {
 })->middleware('auth:sanctum');
 
 
-Route::post('/employee/process', [EmployeeController::class, 'process']);
+Route::post('/employee/process', [EmployeeController::class, 'process'])->name('employee.process');
